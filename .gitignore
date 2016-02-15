@@ -1,0 +1,10 @@
+.DS_Store
+[Tt]humbs.db
+
+.idea/
+
+obj/
+lib/
+
+node_modules/
+node_modules
