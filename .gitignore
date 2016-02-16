@@ -3,6 +3,12 @@
 
 .idea/
 
+*.o
+*.exe
+
+habitat-control
+HabitatControl
+
 obj/
 lib/
 

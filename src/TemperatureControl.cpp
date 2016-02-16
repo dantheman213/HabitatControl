@@ -1,5 +1,4 @@
-//
-// Created by dgillespie on 2/15/2016.
-//
 
+#include <wiringPi.h>
 #include "TemperatureControl.h"
+
