@@ -10,7 +10,6 @@ habitat-control
 HabitatControl
 
 obj/
-lib/
 
 node_modules/
 node_modules
