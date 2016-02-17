@@ -6,5 +6,5 @@
 #include <stdio.h>
 #include <unistd.h>
 
-#include "RCSwitch.h"
+#include "../lib/RCSwitch.h"
 #include "RFComm.h"

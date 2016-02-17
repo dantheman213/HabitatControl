@@ -1,7 +1,5 @@
 
 #include <wiringPi.h>
 
-#include "DHT.h"
+#include "../lib/DHT22.h"
 #include "TemperatureControl.h"
-
-// https://github.com/adafruit/DHT-sensor-library/blob/master/examples/DHTtester/DHTtester.ino
