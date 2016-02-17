@@ -5,4 +5,5 @@ habitat-control: lib/DHT22.o lib/RCSwitch.o src/Daemon.o src/Logging.o src/main.
 
 clean:
 	$(RM) src/*.o bin/habitat-control
+
   
