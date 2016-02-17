@@ -102,7 +102,7 @@ DHT22_SensorResponseModel* DHT22::GetSensorData() {
   else
   {
     responseModel->status = false;
-    printf("Data not good, skip\n");
+    printf("Data not good, skip...\n");
   }
 
   return responseModel;

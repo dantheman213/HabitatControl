@@ -1,3 +1,6 @@
+// Derived and improved from original sources here:
+// https://github.com/technion/lol_dht22/
+
 #include <stdint.h>
 #include "DHT22_SensorResponseModel.h"
 
