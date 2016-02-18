@@ -1,9 +1,12 @@
-all: habitat-control
+all: rf-comm temperature-sensor
 
-habitat-control: lib/DHT22.o lib/RCSwitch.o src/Daemon.o src/Logging.o src/main.o src/Overmind.o src/RFComm.o src/TemperatureControl.o
-	$(CXX) $(CXXFLAGS) $(LDSFLAGS) $+ -pthread -o bin/$@ -lwiringPi
+rf-comm: RCSwitch.o main.o
+	@mkdir -p ../bin
+	$(CXX) $(CXXFLAGS) $(LDSFLAGS) $+ -pthread -o ../bin/$@ -lwiringPi
+
+temperature-sensor: DHT22.o main.o
+	@mkdir -p ../bin
+	$(CXX) $(CXXFLAGS) $(LDSFLAGS) $+ -pthread -o ../bin/$@ -lwiringPi
 
 clean:
-	$(RM) src/*.o bin/habitat-control
-
-  
+	$(RM) rf-comm/*.o temperature-sensor/*.o bin/

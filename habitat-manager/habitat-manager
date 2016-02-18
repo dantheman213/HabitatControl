@@ -1,0 +1,16 @@
+#!/usr/bin/nodejs
+
+// libraries
+var  fs         =    require('fs'),
+     path       =    require('path'),
+     chalk      =    require('chalk'),
+     execSync   =    require('exec-sync')
+     moment     =    require('moment');
+
+
+function main() {
+
+
+}
+
+main();

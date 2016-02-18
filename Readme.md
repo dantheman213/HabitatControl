@@ -27,8 +27,10 @@ The code is built to be customizable. If you need more advanced functionality yo
 ### Building Project ###
 * Make sure the following libraries have been installed:
   - WiringPi (http://wiringpi.com/download-and-install/)
+    + git clone git://git.drogon.net/wiringPi
+    + cd wiringPi && ./build
 
-* Run make
+* Run "./install.sh" which will build the target applications and install them at /usr/bin on your Raspberry Pi.
 
 ### Getting Started ###
 
