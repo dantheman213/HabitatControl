@@ -38,23 +38,23 @@ DHT22_SensorResponseModel* DHT22::GetSensorData() {
 
 	// pull pin down for 18 milliseconds
   pinMode(this->GPIO_PIN_OUTPUT, OUTPUT);
-  digitalWrite(GPIO_PIN_OUTPUT, HIGH);
+  digitalWrite(this->GPIO_PIN_OUTPUT, HIGH);
   delay(10);
-  digitalWrite(GPIO_PIN_OUTPUT, LOW);
+  digitalWrite(this->GPIO_PIN_OUTPUT, LOW);
   delay(18);
 
   // then pull it up for 40 microseconds
-  digitalWrite(GPIO_PIN_OUTPUT, HIGH);
+  digitalWrite(this->GPIO_PIN_OUTPUT, HIGH);
   delayMicroseconds(40);
 
   // prepare to read the pin
-  pinMode(GPIO_PIN_OUTPUT, INPUT);
+  pinMode(this->GPIO_PIN_OUTPUT, INPUT);
 
 	// detect change and read data
   for ( i=0; i< MAXTIMINGS; i++) {
     counter = 0;
 
-    while (sizecvt(digitalRead(GPIO_PIN_OUTPUT)) == laststate) {
+    while (sizecvt(digitalRead(this->GPIO_PIN_OUTPUT)) == laststate) {
       counter++;
       delayMicroseconds(1);
       if (counter == 255) {
@@ -62,7 +62,7 @@ DHT22_SensorResponseModel* DHT22::GetSensorData() {
       }
     }
 
-    laststate = sizecvt(digitalRead(GPIO_PIN_OUTPUT));
+    laststate = sizecvt(digitalRead(this->GPIO_PIN_OUTPUT));
 
     if (counter == 255) {
        break;
