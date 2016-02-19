@@ -9,4 +9,4 @@ temperature-sensor: temperature-sensor/DHT22.o temperature-sensor/main.o
 	$(CXX) $(CXXFLAGS) $(LDSFLAGS) $+ -pthread -o bin/$@ -lwiringPi
 
 clean:
-	$(RM) rf-comm/*.o temperature-sensor/*.o bin/
+	$(RM) rf-comm/*.o temperature-sensor/*.o bin/*

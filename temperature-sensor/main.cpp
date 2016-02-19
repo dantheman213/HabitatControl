@@ -5,25 +5,16 @@
 #include "DHT22.h"
 
 void printUsage(char *argv[]) {
-    printf("Usage: %s -p <GPIO PIN Number>\n", argv[0]);
+    printf("Usage: %s <GPIO PIN Number>\n", argv[0]);
 }
 
 int main(int argc, char *argv[]) {
-    char *gpioPin = NULL;
-
-    int c;
-    while ((c = getopt(argc, argv, "p:")) != -1) {
-        switch (c) {
-            case 'p':
-                gpioPin = optarg;
-                break;
-
-            case '?':
-            default:
-                printUsage(argv);
-                break;
-            }
+    if(argc < 1) {
+        printUsage();
+        return EXIT_SUCCESS;
     }
+
+    char *gpioPin = argv[1];
 
     DHT22 *thermostat = new DHT22((int)gpioPin);
     DHT22_SensorResponseModel *sensorData = thermostat->GetSensorData();

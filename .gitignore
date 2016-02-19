@@ -1,0 +1,14 @@
+.DS_Store
+[Tt]humbs.db
+
+.idea/
+
+bin/
+obj/
+lib/
+
+*.o
+*.exe
+
+node_modules/
+node_modules
