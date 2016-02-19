@@ -9,8 +9,8 @@ void printUsage(char *argv[]) {
 }
 
 int main(int argc, char *argv[]) {
-    if(argc < 1) {
-        printUsage();
+    if((argc-1) < 1) {
+        printUsage(argv);
         return EXIT_SUCCESS;
     }
 
@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
     DHT22 *thermostat = new DHT22((int)gpioPin);
     DHT22_SensorResponseModel *sensorData = thermostat->GetSensorData();
 
-    printf("Success! Temperature is %fF and %fC. The humidity is %f.\n", sensorData->temperatureF, sensorData->temperatureC, sensorData->humidity);
+    printf("Success! Temperature is %fF and %fC. The humidity is %f percent.\n", sensorData->temperatureF, sensorData->temperatureC, sensorData->humidity);
 
     return EXIT_SUCCESS;
 }
