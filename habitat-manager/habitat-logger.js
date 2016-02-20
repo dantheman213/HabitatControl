@@ -7,7 +7,7 @@ var fs          =    require('fs'),
     exec        =    require('child_process').exec;
 
 // globals
-var log_dir = "/var/log/tempeature_sensor.log";
+var log_dir = "/var/log/temperature_sensor.log";
 var temperature_bin = "/usr/bin/temperature-sensor.py";
 
 
