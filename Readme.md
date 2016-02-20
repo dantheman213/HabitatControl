@@ -47,4 +47,14 @@ The install script will grab these libraries for you. However, if doing a manual
     + cd wiringPi && ./build
   - Adafruit_Python_DHT (https://github.com/adafruit/Adafruit_Python_DHT)
     + git clone https://github.com/adafruit/Adafruit_Python_DHT
-    + Follow Readme.md within git repo to install library onto Pi
+    + Follow readme within git repo to install library onto Pi
+
+### Building The Hardware ###
+
+Here is how to setup the hardware module to make everything work.
+
+#### Raspberry Pi GPIO Pin Diagram ####
+https://www.raspberrypi.org/documentation/usage/gpio/
+
+#### WiringPi GPIO Pin Diagram ####
+https://projects.drogon.net/raspberry-pi/wiringpi/pins/
