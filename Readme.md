@@ -42,6 +42,8 @@ This project is still in active development and more information will be provide
 The install script will grab these libraries for you. However, if doing a manual setup then check below.
 
 * Make sure the following libraries have been installed:
+  - sudo apt-get update; sudo apt-get -y upgrade
+  - sudo apt-get -y install build-essential python-dev npm nodejs nodejs-legacy
   - WiringPi (http://wiringpi.com/download-and-install/)
     + git clone git://git.drogon.net/wiringPi
     + cd wiringPi && ./build
