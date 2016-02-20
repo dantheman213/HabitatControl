@@ -1,16 +1,16 @@
 #!/usr/bin/nodejs
 
 // libraries
-var  fs         =    require('fs'),
-     path       =    require('path'),
-     chalk      =    require('chalk'),
-     execSync   =    require('exec-sync')
-     moment     =    require('moment');
+var  fs          =    require('fs'),
+     path        =    require('path'),
+     chalk       =    require('chalk'),
+     execSync    =    require('exec-sync'),
+     moment      =    require('moment');
 
 
-function main() {
+function main(argc, argv) {
 
 
 }
 
-main();
+main(process.argv.splice(1).length, process.argv.splice(1));
