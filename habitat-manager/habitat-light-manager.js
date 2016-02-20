@@ -27,6 +27,7 @@ if(fs.existsSync(temp_log)) {
         var lastLine = lines.slice(-1)[0];
 
         var sensor1_temp = lastLine.split(',')[1];
+        console.log('Checking at ' + moment().format());
         console.log('Sensor 1 temp is: ' + sensor1_temp + '.');
 
         var temp = parseFloat(sensor1_temp.slice(0, -1));
