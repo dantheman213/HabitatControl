@@ -20,8 +20,8 @@ var nightLampRF = {
   on: 333107,
   off: 333116
 };
-var terrarium_hotpoint = 88.0;
-var terrarium_coolpoint = 84;
+var terrarium_hotpoint = 88;
+var terrarium_coolpoint = 86;
 
 var environmentTimeData = {
   dayTime: moment('7:00 AM', 'h:mm A'),
