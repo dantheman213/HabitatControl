@@ -113,7 +113,7 @@ function main() {
   console.log('Checking is day or night...');
 
   if(moment() < environmentTimeData.dayTime) {
-    environmentTimeData.nightTime = environmentTimeData.nightTime.substract(1, 'days');
+    //environmentTimeData.nightTime = environmentTimeData.nightTime.substract(1, 'days');
   }
 
   var timeMode = checkDayOrNight();
